@@ -1,0 +1,545 @@
+@font-face {
+    font-family: 'Druk Cyr';
+    src: url('fonts/DrukCyr-Heavy.eot');
+    src: local('Druk Cyr Heavy'), local('DrukCyr-Heavy'),
+        url('fonts/DrukCyr-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('fonts/DrukCyr-Heavy.woff2') format('woff2'),
+        url('fonts/DrukCyr-Heavy.woff') format('woff'),
+        url('fonts/DrukCyr-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.title {
+    font-family: 'Druk Cyr';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 92px;
+    text-transform: uppercase;
+}
+
+.header__menu {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 12px 0 40px;
+}
+
+.menu li {
+    display: inline-block;
+    list-style: none;
+    padding-right: 40px
+}
+
+.menu li:last-child {
+    padding-right: 0;
+}
+
+.menu__link {
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 22px;
+    color: #050608;
+}
+
+.menu__link-call {
+    padding: 17px 23px;
+    background-color: #000;
+    color: #fff;
+    transition: all .2s;
+}
+
+.menu__link-call:hover {
+    background-color: #fff;
+    color: #000;
+    box-shadow: 5px 5px 5px -5px rgba(0, 0, 0, 0.6) inset;
+
+}
+
+.header__title {
+    background-color: #FCFF6F;
+    width: 100%;
+    position: relative;
+    height: 459px;
+}
+
+.header__img {
+    position: absolute;
+    top: 82%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.header__text-img {
+    align-items: center;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+/* Technic */
+
+.technic {
+    margin-top: 220px;
+
+    margin: 220px 40px 0px 40px;
+}
+
+.technic__title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.technic-1 {
+    background-color: #452E0A;
+    max-width: 1200px;
+    height: 450px;
+    display: flex;
+    padding: 40px;
+}
+
+.technic__img {
+    padding-right: 40px;
+}
+
+
+.technic__info-title {
+    font-family: 'Druk Cyr';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 61px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0;
+    padding-bottom: 24px;
+}
+
+.technic__char {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 80px;
+}
+
+.technic__char-title {
+    line-height: 19px;
+    color: #9F967D;
+
+}
+
+.technic__char-text {
+    font-family: 'Druk Cyr';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 41px;
+    text-transform: uppercase;
+    color: #FCFF6F;
+    padding-bottom: 24px;
+    max-width: 252px;
+}
+
+.price-btn {
+    line-height: 19px;
+    color: #452E0A;
+    height: 56px;
+    width: 160px;
+    margin-top: 50px;
+    background-color: #FCFF6F;
+    cursor: pointer;
+    border: none;
+}
+
+.price-btn:hover {
+    background-color: #fff;
+    box-shadow: 5px 5px 5px -5px rgba(0, 0, 0, 0.6) inset;
+
+}
+
+.technic-2 {
+    margin-top: 40px;
+    background-color: #452E0A;
+    max-width: 1200px;
+    height: 450px;
+    display: flex;
+    padding: 40px;
+}
+
+.technic__img-2 {
+    padding: 0;
+}
+
+.technic-others__inner {
+    display: flex;
+}
+
+.technic-others {
+    margin-top: 40px;
+    background-color: #452E0A;
+    max-width: 1200px;
+    height: 450px;
+}
+
+
+.technic-others__img {
+    padding: 40px;
+}
+
+.technic-others__items {
+    padding-top: 40px;
+}
+
+.technic-other__title {
+    font-family: 'Druk Cyr';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 61px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.technic-other__subtitle {
+    line-height: 19px;
+    color: #9F967D;
+    margin-bottom: 24px;
+}
+
+.price-btn__others {
+    margin-top: 0;
+}
+
+
+/* Supply */
+
+.supply {
+    margin-top: 120px;
+    width: 100%;
+    height: 933px;
+    background-color: #452E0A;
+}
+
+.supply__info {
+    display: flex;
+    padding-top: 80px;
+    justify-content: space-around;
+}
+
+.supply__title {
+    color: #FCFF6F;
+    max-width: 494px;
+    margin-right: 66px;
+}
+
+.supply__info-text {
+    max-width: 480px;
+    margin-top: 20px;
+}
+
+.supply__info-title {
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+
+.supply__info-subtitle {
+    margin-top: 12px;
+    line-height: 28px;
+    color: #FFFFFF;  
+}
+
+.supply__items {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 49px;
+}
+
+.supply__item {
+    position: relative;
+}
+
+.supply__text {
+    width: 370px;
+    height: 144px;
+    background-color: #FCFF6F;
+    font-family: 'Druk Cyr';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 48px;
+    text-transform: uppercase;
+    color: #452E0A;
+    padding: 24px;
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+}
+
+/* Deal */
+
+.deal {
+    margin-top: 160px;
+}
+
+.deal__items {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.deal__item {
+    max-width: 373px;
+    height: 268px;
+    background-color: #452E0A;
+}
+
+.deal__item-img {
+    padding: 34px 0px 34px 38px;
+}
+
+.deal__item-text {
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+    padding: 0 31px 32px 32px;
+}
+
+/* Cooperation */
+
+.cooperation {
+    margin-top: 160px;
+    position: relative;
+}
+
+.cooperation__info {
+    max-width: 1200px;
+    height: 521px;
+    background-color: #FCFF6E;
+}
+
+.cooperation__info {
+    display: flex;
+}
+
+.cooperation__info-title {
+    padding: 40px 0px 0px 40px;
+    max-width: 494px;
+    margin-right: 86px;
+}
+
+.cooperation__info-inner {
+    max-width: 373px;
+    padding-top: 40px;
+}
+
+.cooperation__info-text {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #000000;
+}
+
+.cooperation__info-subtitle {
+    line-height: 24px;
+    color: #404040;
+    padding-top: 12px;
+}
+
+.cooperation__info-img {
+    position: absolute;
+    top: 328px;
+}
+
+/* Contacts */
+
+.contacts {
+    margin-top: 80px;
+}
+
+.contacts__info {
+    background-color: #452E0A;
+    height: 162px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+.contacts__info-title {
+    font-family: 'Druk Cyr';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 41px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    opacity: 0.4;
+}
+
+.contacts__info-subtitle {
+    font-family: 'Druk Cyr';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 41px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/* Footer */
+
+.footer {
+    margin: 40px 0px 20px 0px;
+}
+
+.footer__inner {
+    max-width: 289px;
+    margin: 0 auto;
+}
+
+.footer__text {
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #C4C4C4;
+}
+
+
+@media (max-width:1200px) {
+
+    .container {
+        max-width: 1100px;
+    }
+
+    .header__text-img {
+        width: 1084px;
+        height: auto;
+    }
+    .supply__img {
+        width: 540px;
+        height: auto;
+    }
+
+    .deal__item {
+        margin-right: 20px;
+    }
+    .deal__item:last-child{
+        margin-right: 0;
+    }
+    .cooperation__info-img {
+        width: 1002px;
+        height: auto;
+        right: 65px
+    }
+}
+
+@media (max-width:1146px) {
+    .container {
+        max-width: 1000px;
+    }
+    .technic__info-title {
+        font-size: 38px;
+    }
+    .technic__char-text {
+        font-size: 24px;
+    }
+    .technic__char {
+        grid-column-gap: 20px;
+    }
+    .cooperation__info-img {
+        width: 920px;
+        right: 55px;
+        top: 350px;
+    }
+    .supply__img {
+        width: 460px;
+    }
+    .supply__text {
+        width: 320px;
+        height: auto;
+        font-size: 38px;
+        bottom: 20px;
+        left: 20px;
+    }
+    .supply__title {
+        text-align: center;
+    }
+}
+
+@media (max-width:1086px) {
+
+    .title {
+        font-size: 54px;
+    }
+    .header__text-img {
+        width: 768px;
+    }
+    .header__img {
+        width: 573px;
+        height: auto;
+    }
+    
+    .technic__img {
+        width: 469px;
+        height: 303px;
+    }
+
+    .technic-other__title {
+        font-size: 38px;
+    }
+    .cooperation__info-img {
+        width: 840px;
+        right: 100px;
+        top: 375px;
+    }
+    .contacts__info-title, .contacts__info-subtitle {
+        font-size: 26px;
+    }
+    .deal__item-text {
+        font-size: 20px;
+    }
+}
