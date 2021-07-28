@@ -66,11 +66,11 @@ h1, h2, h3, h4, h5, h6 {
 .menu li {
     display: inline-block;
     list-style: none;
-    padding-right: 40px
+    margin-right: 40px
 }
 
 .menu li:last-child {
-    padding-right: 0;
+    margin-right: 0;
 }
 
 .menu__link {
@@ -91,7 +91,17 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #fff;
     color: #000;
     box-shadow: 5px 5px 5px -5px rgba(0, 0, 0, 0.6) inset;
+}
 
+
+
+.menu__link-hidden {
+    display: none;
+}
+
+
+.menu__item:hover {
+    border-bottom: 3px solid #000;
 }
 
 .header__title {
@@ -122,8 +132,6 @@ h1, h2, h3, h4, h5, h6 {
 /* Technic */
 
 .technic {
-    margin-top: 220px;
-
     margin: 220px 40px 0px 40px;
 }
 
@@ -270,7 +278,7 @@ h1, h2, h3, h4, h5, h6 {
 .supply__title {
     color: #FCFF6F;
     max-width: 494px;
-    margin-right: 66px;
+    /* margin-right: 66px; */
 }
 
 .supply__info-text {
@@ -507,6 +515,7 @@ h1, h2, h3, h4, h5, h6 {
     }
     .supply__title {
         text-align: center;
+        margin-right: 40px;
     }
 }
 
@@ -541,5 +550,433 @@ h1, h2, h3, h4, h5, h6 {
     }
     .deal__item-text {
         font-size: 20px;
+    }
+}
+
+@media (max-width:970px) {
+    .container {
+        max-width: 870px;
+    }
+    .technic-other__title {
+        font-size: 32px;
+    }
+    .technic-others__img {
+        width: 545px;
+        height: auto;
+    }
+    .price-btn {
+        width: 120px;
+        height: 40px;
+        margin-top: 20px;
+    }
+    .supply__img {
+        width: 400px;
+    }
+    .supply__text {
+        font-size: 28px;
+        width: 200px;
+    }
+    .deal__item-text {
+        font-size: 18px;
+    }
+    .cooperation__info {
+        height: 450px;
+    }
+    .cooperation__info-text {
+        font-size: 18px;
+    }
+    .cooperation__info-subtitle {
+        font-size: 16px;
+    }
+    .cooperation__info-img {
+        width: 780px;
+        right: 85px;
+        top: 315px;
+    }
+    .technic__info-title {
+        font-size: 32px;
+    }
+    .technic__char-text {
+        padding-bottom: 10px;
+    }
+    .technic__img {
+        width: 428px;
+        height: 274px;
+    }
+    .menu li {
+        margin-right: 20px;
+    }
+    .menu__link-call {
+        padding: 12px;
+    }
+
+    .technic-1, .technic-2 {
+        display: block;
+        height: auto;
+    }
+    .technic__img {
+        display: block;
+        margin: 0 auto;
+    }
+    .technic__info {
+      display: flex; 
+      flex-direction: column;
+      vertical-align: center;
+      align-items: center;
+    }
+    .technic__img-2 {
+        padding-top: 20px;
+    }
+}
+
+@media (max-width:880px) {
+    .supply__info {
+        flex-direction: column;
+        align-items: center;
+    }
+    .supply__items {
+        justify-content: space-around;
+    }
+    .supply__title {
+        margin-right: 0;
+    }
+    .supply__img {
+        width: 300px;
+    }
+    .supply__text {
+        font-size: 21px;
+        width: 155px;
+        line-height: 30px;
+        padding: 15px;
+        bottom: 10px;
+        left: 10px;
+    }
+
+    .container {
+        max-width: 780px;
+    }
+
+    .cooperation__info-img {
+        width: 700px;
+    }
+    .technic-others {
+        height: auto;
+        padding-bottom: 20px;
+    }
+    .technic-others__img {
+        width: 465px;
+        height: 393px;
+    }
+    .technic-other__title {
+        font-size: 26px;
+    }
+    .technic-other__subtitle {
+        font-size: 14px;
+    }
+    .cooperation__info-img {
+        width: 650px;
+        top: 345px;
+    }
+    .container {
+        max-width: 768px;
+    }
+    .cooperation__info-title {
+        margin-right: 40px;
+    }
+    .title {
+        font-size: 48px;
+        line-height: 60px;
+    }
+}
+
+@media (max-width: 786px) {
+    .header__text-img {
+        width: 640px;
+    }
+    .header__title {
+        height: 300px;
+    }
+    .header__img {
+        width: 425px;
+        top: 79%;
+    }
+    .technic-other__subtitle {
+        margin-bottom: 0;
+    }
+    .technic-others__img {
+        width: 385px;
+        height: 313px;
+    }
+    .container {
+        max-width: 686px;
+    }
+    .deal__item-text {
+        padding: 0 15px 15px 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cooperation__info-img {
+        right: 45px;
+    }
+    .menu li {
+        margin-right: 10px;
+    }
+    .menu__item {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 700px) {
+    .cooperation__info-img {
+        right: 35px;
+        width: 600px;
+    }
+    .cooperation__info {
+        height: 430px;
+    }
+    .header__menu {
+        margin: 20px 0;
+        flex-direction: column;
+    }
+    .cooperation__info-text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .cooperation__info-subtitle {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .cooperation__info-img {
+        right: 50px;
+        width: 530px;
+    }
+    .contacts__info-title, .contacts__info-subtitle {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 654px) {
+    .technic-others__inner {
+        flex-direction: column;
+        align-items: center;
+    }
+    .technic-others__img {
+        width: 100%;
+        height: 100%;
+    }
+    .technic-others__items {
+        padding-top: 0;
+    }
+    .technic__img {
+        width: 100%;
+        height: auto;
+    }
+    .header__text-img {
+        width: 476px;
+    }
+    .header__img {
+        width: 340px;
+        top: 79%;
+    }
+    .header__title {
+        height: 230px;
+    }
+    .technic {
+        margin-top: 100px;
+    }
+    .container {
+        max-width: 554px;
+    }
+    .cooperation__info {
+        flex-direction: column;
+        align-items: center;
+    }
+    .deal__items {
+        flex-direction: column;
+        align-items: center;
+    }
+    .deal__item {
+        margin: 0 0 10px 0;
+    }
+    .supply__img {
+        width: 240px;
+    }
+    .supply__text {
+        padding: 5px;
+        line-height: 20px;
+        width: 130px;
+    }
+}
+
+@media (max-width: 582px)  {
+    .cooperation__info-img {
+        width: 350px;
+        top: 325px;
+    }
+    .container {
+        max-width: 482px;
+    }
+    .title {
+        font-size: 38px;
+        line-height: 50px;
+    }
+    .cooperation__info {
+        height: 390px;
+    }
+    .supply {
+        height: unset;
+        padding-bottom: 10px;
+    }
+    .supply__items {
+        flex-direction: column;
+        align-items: center;
+    }
+    .supply__img {
+        width: 300px;
+    }
+    .supply__info-title {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .supply__info-subtitle {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+@media (max-width: 582px)  {
+    .cooperation {
+        margin-top: 100px;
+    }
+    .menu__item:last-child {
+        display: none;
+    }
+
+    .menu__link-hidden {
+        display: block;
+        text-decoration: none;
+        font-weight: 500;
+        line-height: 22px;
+        color: #050608;
+        padding: 12px;
+        background-color: #000;
+        color: #fff;
+        transition: all .2s;
+        margin: 30px 0;
+    }
+    
+    .menu__link-hidden:hover {
+        background-color: #fff;
+        color: #000;
+        box-shadow: 5px 5px 5px -5px rgba(0, 0, 0, 0.6) inset;
+    }
+    .header__menu {
+        margin: 30px 0 80px 0;
+    }
+    .header__nav {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 582px) {
+    .container {
+        max-width: 482px;
+    }
+    .header__text-img {
+        width: 375px;
+    }
+    .header__img {
+        width: 285px;
+    }
+}
+
+@media (max-width: 486px)  {
+    .container {
+        max-width: 375px;
+    }
+    .cooperation__info {
+        height: 480px;
+    }
+    .cooperation__info-img {
+        top: 435px;
+    }
+    .cooperation__info-inner {
+        max-width: 290px;
+    }
+    .contacts__info {
+        padding: 10px;
+        height: 125px;
+    }
+    .contacts__info-title, .contacts__info-subtitle {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .header__menu {
+        padding: 0 10px 0 10px;
+    }
+    .deal .title {
+        text-align: center;
+    }
+    .technic__img {
+        width: 120%;
+    }
+}
+
+@media (max-width: 414px) {
+    .cooperation__info-img {
+        right: 25px;
+    }
+    
+}
+
+@media (max-width: 407px)  {
+    .header__nav {
+        display: none;
+    }
+    .technic__img-2 {
+        width: 100%;
+    }
+    .technic__char-text {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .technic__info-title {
+        line-height: 40px;
+        font-size: 24px;
+    }
+    .technic__char-title {
+        font-size: 14px;
+    }
+    .cooperation__info-img {
+        right: 20px
+    }
+    .deal__item {
+        max-width: 100%;
+        height: 230px;
+    }
+    .deal {
+        margin-top: 80px;
+    }
+}
+
+@media (max-width: 375px) {
+    .container {
+        max-width: 340px;
+    }
+    .header__text-img {
+        width: 320px;
+    }
+    .header__img {
+        width: 250px;
+    }
+    .menu__link-hidden {
+        margin: 20px;
+    }
+    .header__menu {
+        margin-bottom: 50px;
+    }
+    .cooperation__info-img {
+        right: 5px;
     }
 }
